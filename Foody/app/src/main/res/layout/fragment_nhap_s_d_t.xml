@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Fragment.NhapSDTFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/title1"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chào bạn," />
+        <TextView
+            android:id="@+id/title2"
+            android:textColor="#000"
+            android:layout_below="@+id/title1"
+            android:text="Nhập số điện thoại để tiếp tục"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/sdt_nhapvao_355"
+            android:layout_margin="20dp"
+            android:background="@drawable/bg_edittext_sdt"
+            android:layout_below="@+id/title2"
+            android:hint="Số điện thoại"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/canhbao_sdt_355"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@id/sdt_nhapvao_355"
+            android:textColor="#A50101"
+            android:text="Vui lòng nhập số điện thoại!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/boqua_dangnhap_355"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="#007CDF"
+            android:textAlignment="center"
+            android:text="Bỏ qua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <Button
+            android:id="@+id/tieptuc_dangnhap_355"
+            android:fontFamily="sans-serif"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:text="Tiếp tục"
+            android:background="@drawable/bg_dangnap"
+            android:layout_above="@id/boqua_dangnhap_355"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ThongTinDangNhapFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/nhapten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title1"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên bạn là gì?" />
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/title2"
+                android:textColor="#000"
+                android:layout_below="@+id/title1"
+                android:text="Nhập họ tên để tiếp tục"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/ten_355"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_edittext_sdt"
+                android:layout_below="@+id/title2"
+                android:hint="Tên"
+                android:layout_width="175dp"
+                android:layout_height="40dp"/>
+            <EditText
+                android:id="@+id/ho_355"
+                android:layout_toRightOf="@+id/ten_355"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_edittext_sdt"
+                android:layout_below="@+id/title2"
+                android:hint="Họ"
+                android:layout_width="175dp"
+                android:layout_height="40dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/nhapten"
+            android:id="@+id/nhapngaysinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title3"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày sinh của bạn?" />
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/title4"
+                android:textColor="#000"
+                android:layout_below="@+id/title3"
+                android:text="Nhận quà bất ngờ vào ngày sinh nhật."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/ngaysinh_355"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_edittext_sdt"
+                android:layout_below="@+id/title4"
+                android:hint="DD/MM/YY"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/nhapngaysinh"
+            android:id="@+id/nhapndiachi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title5"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nơi bạn ở?" />
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/title6"
+                android:textColor="#000"
+                android:layout_below="@+id/title5"
+                android:text="Nhập để hoàn tất"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/diachi_355"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_edittext_sdt"
+                android:layout_below="@+id/title6"
+                android:hint="Địa chỉ"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+        </RelativeLayout>
+
+        <Button
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/hoantat_355"
+            android:fontFamily="sans-serif"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:text="Hoàn tất"
+            android:background="@drawable/bg_dangnap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+</FrameLayout>

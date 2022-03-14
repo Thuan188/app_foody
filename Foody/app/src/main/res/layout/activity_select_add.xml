@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivitySelectAdd">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_back"
+                android:textColor="#000"
+                android:layout_marginTop="-10dp"
+                android:textStyle="bold"
+                android:textSize="42sp"
+                android:drawableLeft="@drawable/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:textSize="22sp"
+                android:text="Chọn Tỉnh thành"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:background="@drawable/duongvien_search"
+        android:drawableLeft="@drawable/as"
+        android:hint="  Tìm Tỉnh thành"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/lv_selec_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

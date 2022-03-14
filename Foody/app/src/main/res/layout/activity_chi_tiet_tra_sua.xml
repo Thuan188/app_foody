@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#E41111"
+
+                android:id="@+id/Retop">
+
+                <ImageView
+                    android:id="@+id/igchitietmilkback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:text="Quán Ăn"
+
+                    android:textColor="#fff"/>
+                <ImageView
+                    android:id="@+id/igshare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more_vert_24"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="370dp"/>
+
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/image_poster"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/igcheck"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/checkmark"/>
+                <TextView
+                    android:id="@+id/tv_tenquan"
+                    android:textColor="#000"
+                    android:text="XIU Milk - Nguyễn Hoàng"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"/>
+                <TextView
+                    android:layout_below="@+id/tv_tenquan"
+                    android:id="@+id/tv_diachi"
+                    android:textColor="#5C5B5B"
+                    android:text="239 Nguyễn Hoàng, Quận Thanh Khê, Đà Nẵng"
+                    android:textSize="13sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_below="@+id/tv_diachi"
+                    android:id="@+id/tv_danhgia"
+                    android:textColor="#333232"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_star"
+                    android:text="Món Việt  |   Giá ~ 27k     |   ⭐⭐⭐⭐⭐️ 4.8 (999+)"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/danhsachsp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/giohang"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/sl_chitiet"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btnthem"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:text="2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/gia_chitiet"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/sl_chitiet"
+            android:text="39,000đ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_giohang"
+            android:textAllCaps="false"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:background="@drawable/btnthem"
+            android:layout_alignParentRight="true"
+            android:text="Giỏ hàng"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+</RelativeLayout>

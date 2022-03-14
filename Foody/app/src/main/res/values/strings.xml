@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Foody</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello2_blank_fragment">Hello 2 blank fragment</string>
+    <string name="hello3_blank_fragment">Hello 3 blank fragment</string>
+    <string name="loading"> Loading...</string>
+    <string name="tencongty"></string>
+    <string name="version">Version </string>
+</resources>

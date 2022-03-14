@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMilk"
+    android:orientation="vertical"
+    android:background="#BFBFBF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cd2027">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/ig_back"
+        />
+
+    </LinearLayout>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:background="#cd2027"
+            android:orientation="horizontal"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_collapseMode="pin"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/botron">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/as" />
+
+                <EditText
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:baselineAligned="false"
+                    android:hint="Tìm địa điểm, món ăn, địa chỉ..."
+                    android:textColor="#999"
+                    android:textColorLink="#999"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/btn_addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:drawableRight="@drawable/ic_baseline_arrow"
+                    android:gravity="center"
+                    android:hint="Đà Nẵng"
+                    android:textColor="#999"
+                    android:textColorLink="#999"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+
+
+<!--    <com.smarteist.autoimageslider.SliderView-->
+<!--        android:layout_gravity="center"-->
+<!--        app:sliderScrollTimeInSec="2"-->
+<!--        app:sliderStartAutoCycle="true"-->
+<!--        app:sliderAutoCycleDirection="back_and_forth"-->
+<!--        app:sliderIndicatorPadding="4dp"-->
+<!--        app:sliderIndicatorRadius="1.5dp"-->
+<!--        app:sliderIndicatorSelectedColor="#636363"-->
+<!--        app:sliderIndicatorUnselectedColor="#fff"-->
+<!--        app:sliderAnimationDuration="1000"-->
+<!--        app:sliderIndicatorGravity="center_horizontal|bottom"-->
+<!--        android:id="@+id/slider"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="150dp"-->
+
+<!--        android:background="#fff"/>-->
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity"
+            android:background="#C8C7C7"
+            android:orientation="vertical">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp">
+        <TextView
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:text="Bộ sưu tập"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:text="Xem thêm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="#fff"
+        android:paddingLeft="10dp"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_trasua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="#DC2323"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="auto"
+            app:tabSelectedTextColor="#000000"
+            app:tabTextAppearance="@style/TextAppearance.AppCompat.Small"
+            android:background="#fff"
+            android:layout_marginBottom="1dp">
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/Vp_trasua"
+            android:layout_width="match_parent"
+            android:layout_height="560dp"
+            android:background="#fff"/>
+    </LinearLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff">
+                <TextView
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="Khuyến mãi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:textSize="12dp"
+                    android:textColor="#000"
+                    android:text="Xem thêm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:paddingLeft="10dp"
+                android:id="@+id/recycler_sanpham_1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#fff"/>
+            <ImageView
+                android:src="@drawable/poster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            <ListView
+                android:id="@+id/lvgoiy"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:background="#fff"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

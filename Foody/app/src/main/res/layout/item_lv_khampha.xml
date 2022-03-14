@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/dongsp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/tv_tenquan"
+            android:textColor="#000"
+            android:text="XIU Milk - Nguyễn Hoàng"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"/>
+        <TextView
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/tv_diachi"
+            android:textColor="#5C5B5B"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:text="239 Nguyễn Hoàng, Quận Thanh Khê, Đà Nẵng"
+            android:textSize="12sp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_danhgia"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:text="4.8  "
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bachground_congcu2"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tv_khac"
+            android:drawableLeft="@drawable/location_on_24"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="500m"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tenquan"
+            android:layout_toRightOf="@+id/tv_diachi"
+            android:gravity="center"/>
+    </RelativeLayout>
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/igsp"
+        android:layout_width="400dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bachground_congcu4"
+        android:textColor="#fff"
+        android:textSize="10dp"
+        android:text="Đặt giao hàng"
+        android:textStyle="bold"
+        android:drawableTop="@drawable/giao_hang"
+        android:layout_margin="5dp"/>
+
+
+
+
+</LinearLayout>

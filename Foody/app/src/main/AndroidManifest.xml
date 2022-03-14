@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gridview">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/foody"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/foody"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".DangNhapActivity" />
+        <activity android:name=".GioHangActivity" />
+        <activity android:name=".ActivitySelectAdd" />
+        <activity
+            android:name=".SlashScreenActivity"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ThanhvienActivity" />
+        <activity android:name=".Fragment.FragmentChiTietMilkGiaoHang" />
+        <activity android:name=".Fragment.FragmentChiTietMilkThongTin" />
+        <activity android:name=".ChiTietTraSua" />
+        <activity android:name=".MainMilk" />
+        <activity android:name=".Khampha" />
+        <activity android:name=".ChiTietBoSuuTap" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivityMe" />
+        <activity android:name=".MainActivityGioHang" />
+    </application>
+
+</manifest>

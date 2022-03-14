@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#fff"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/anhsp_rgh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <RelativeLayout
+        android:layout_toRightOf="@id/anhsp_rgh"
+        android:id="@+id/chitiet_giohang_355"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:id="@+id/soluong_giohang"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="5 x "
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_toRightOf="@id/soluong_giohang"
+            android:paddingLeft="10dp"
+            android:id="@+id/name_sp_giohang_355"
+            android:textColor="#000"
+            android:text="Socola Lúa Mạch đá xay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tongtien_giohang_355"
+            android:layout_alignParentRight="true"
+            android:textColor="#000"
+            android:text="207.000 đ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>
